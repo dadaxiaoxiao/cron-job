@@ -1,10 +1,10 @@
 module github.com/dadaxiaoxiao/cron-job
 
-go 1.21
+go 1.22
 
 require (
-	github.com/dadaxiaoxiao/api-repository v0.0.1
-	github.com/dadaxiaoxiao/go-pkg v0.3.2
+	github.com/dadaxiaoxiao/api-repository v0.0.3
+	github.com/dadaxiaoxiao/go-pkg v0.3.3
 	github.com/prometheus/client_golang v1.19.1
 	github.com/redis/go-redis/v9 v9.5.2
 	github.com/robfig/cron/v3 v3.0.1

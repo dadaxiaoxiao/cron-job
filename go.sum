@@ -12,10 +12,14 @@ github.com/coreos/go-systemd/v22 v22.3.2 h1:D9/bQk5vlXQFZ6Kwuu6zaiXJ9oTPe68++AzA
 github.com/coreos/go-systemd/v22 v22.3.2/go.mod h1:Y58oyj3AT4RCenI/lSvhwexgC+NSVTIJ3seZv2GcEnc=
 github.com/dadaxiaoxiao/api-repository v0.0.1 h1:yecgKx4qBOptcDRQMbmiuEnrv9l2Ol5/P9+uYnLA6js=
 github.com/dadaxiaoxiao/api-repository v0.0.1/go.mod h1:gJKPSXihmDYayrQ6VZxDTtWcQGnSZvUP6YSfxD6DlB0=
+github.com/dadaxiaoxiao/api-repository v0.0.3 h1:Z8adLIIzHaF8NsyXXx3TjNDuPNOr57DHQYwrh9p5f14=
+github.com/dadaxiaoxiao/api-repository v0.0.3/go.mod h1:sUdpVkAXhOSMdsG1fukeXkaEjY8IDK/ER+rClYvUGqE=
 github.com/dadaxiaoxiao/go-pkg v0.3.1 h1:K4rYgrf6cHoGtgGNHHbzI8b+g3ALVOqtnhpMjFC8sFY=
 github.com/dadaxiaoxiao/go-pkg v0.3.1/go.mod h1:R3zWWTI/mQ9VDNq1qdLlgP/zw+5Won49+0fGyjsGj+o=
 github.com/dadaxiaoxiao/go-pkg v0.3.2 h1:FaVdhG2HgegVkQLi61ABdThNoAVNSLmrFLyf7XF/Mj8=
 github.com/dadaxiaoxiao/go-pkg v0.3.2/go.mod h1:R3zWWTI/mQ9VDNq1qdLlgP/zw+5Won49+0fGyjsGj+o=
+github.com/dadaxiaoxiao/go-pkg v0.3.3 h1:kDO0qKTG0RT1FK9OQkveYzREfaAJZBt/zqizztJ7dN8=
+github.com/dadaxiaoxiao/go-pkg v0.3.3/go.mod h1:b0Az4OYPJYuk3WfcTmqGeCLkN8W/GfuD0YeZRbT3EOM=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc h1:U9qPSI2PIWSS1VwoXQT9A3Wy9MM3WgvqSxFWenqJduM=
