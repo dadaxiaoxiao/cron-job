@@ -9,6 +9,10 @@ import (
 
 func main() {
 	initViper()
+
+	// 按需开启远程
+	// initViperRemote()
+
 	initPrometheus()
 	app := InitApp()
 	err := app.GRPCServer.Serve()
@@ -32,10 +36,49 @@ func initViper() {
 	}
 }
 
+func initViperRemote() {
+	type Config struct {
+		Provider string `yaml:"provider"`
+		Endpoint string `yaml:"endpoint"`
+		Path     string `yaml:"path"`
+	}
+
+	var config Config
+	err := viper.UnmarshalKey("remoteProvider", &config)
+	if err != nil {
+		panic(err)
+	}
+	// 新增远程配置
+	err = viper.AddRemoteProvider(config.Provider,
+		config.Endpoint, config.Path)
+	if err != nil {
+		panic(err)
+	}
+	viper.SetConfigType("yaml")
+	// 实时监听配置变更
+	err = viper.WatchRemoteConfig()
+	if err != nil {
+		panic(err)
+	}
+	// 读取配置到viper 里面
+	err = viper.ReadRemoteConfig()
+	if err != nil {
+		panic(err)
+	}
+}
+
 func initPrometheus() {
+	type Config struct {
+		ListenPort string `yaml:"listenPort"`
+	}
+	var config Config
+	err := viper.UnmarshalKey("prometheus", &config)
+	if err != nil {
+		panic(err)
+	}
 	go func() {
 		http.Handle("/metrics", promhttp.Handler())
 		// 暴露监听端口
-		http.ListenAndServe(":8081", nil)
+		http.ListenAndServe(config.ListenPort, nil)
 	}()
 }
